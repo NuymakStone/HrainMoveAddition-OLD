@@ -21,6 +21,7 @@ package me.nuymakstone.HrainAC;
 import com.comphenix.protocol.ProtocolLibrary;
 import com.comphenix.protocol.ProtocolManager;
 import me.nuymakstone.HrainAC.command.HrainACCommand;
+import me.nuymakstone.HrainAC.hook.NCPDragDown;
 import me.nuymakstone.HrainAC.module.*;
 import me.nuymakstone.HrainAC.util.ConfigHelper;
 import org.bukkit.Bukkit;
@@ -44,7 +45,6 @@ import java.util.concurrent.ConcurrentHashMap;
 public class HrainMoveAddition extends JavaPlugin {
     public static Plugin instance;
     public static ProtocolManager protocolManager;
-
     //I take that back: this game does have its problems, but it's still fun to play on.
     //If you don't like my HashMap soup, then guess what: I don't care.
     //Made with passion in U.S.A.
@@ -69,17 +69,22 @@ public class HrainMoveAddition extends JavaPlugin {
     public static String BUILD_NAME;
     public static String FLAG_CLICK_COMMAND;
     public static boolean USING_PACKETEVENTS;
-    public static final String NO_PERMISSION = ChatColor.RED + "あなたには許可がありません \"%s\" このアクションを実行します。";
+    public static final String NO_PERMISSION = ChatColor.RED + "你没有使用 \"%s\" 的权限。";
     private boolean sendJSONMessages;
     private boolean playSoundOnFlag;
     @Override
     public void onEnable() {
         plugin = this;
+        HrainMoveAddition.instance = this;
         BUILD_NAME = getDescription().getVersion();
         setServerVersion();
         loadModules();
         getLogger().info("HrainAC已被加载。 Copyright（C）2018-2021 NuymakStone。");
         protocolManager = ProtocolLibrary.getProtocolManager();
+        if (this.getServer().getPluginManager().isPluginEnabled("NoCheatPlus")) {
+            new NCPDragDown();
+            getLogger().info("HrainAddition已经检测到NoCheatPlus,修复NoCheatPlus的检测。");
+        }
     }
 
     @Override

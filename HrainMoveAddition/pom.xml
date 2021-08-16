@@ -64,6 +64,14 @@
             <id>dmulloy2-repo</id>
             <url>https://repo.dmulloy2.net/repository/public/</url>
         </repository>
+        <repository>
+            <id>md_5-snapshots</id>
+            <url>https://repo.md-5.net/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>md_5-releases</id>
+            <url>https://repo.md-5.net/content/repositories/releases/</url>
+        </repository>
     </repositories>
     <dependencies>
         <dependency>
@@ -85,6 +93,13 @@
             <version>1.7.10</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/softdepend/Spigot-1.7.10.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>fr.neatmonster</groupId>
+            <artifactId>nocheatplus</artifactId>
+            <version>3.17.1-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/softdepend/NoCheatPlus.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.comphenix.protocol</groupId>
