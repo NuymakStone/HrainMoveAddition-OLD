@@ -11,26 +11,26 @@ commands:
         description: Basic information about HrainMoveAddition Anticheat
         usage: /<command>
 permissions:
-  HrainAC.admin:
+  hrainac.admin:
     description: Grants permission to perform administrative HrainMoveAddition tasks.
     default: op
-  HrainAC.cmd:
+  hrainac.cmd:
     description: Gives access to help menu.
     default: op
-  HrainAC.cmd.*:
+  hrainac.cmd.*:
     description: Gives access to any HrainMoveAddition command.
     default: op
     children:
-      HrainAC.cmd: true
-  HrainAC.alerts:
+      hrainac.cmd: true
+  hrainac.alerts:
     description: Allows one to recieve HrainMoveAddition notifications.
     default: op
-  HrainAC.bypass:
+  hrainac.bypass:
     description: Allows one to bypass a check. (You must specify the check with an additional node, such as "HrainMoveAddition.bypass.speed")
     default: op
-  HrainAC.bypassresync:
+  hrainac.bypassresync:
     description: Prevents having actions forcibly resynchronized by the anticheat. Use only for testing purposes, such as anticheat test servers.
     default: op
-  HrainAC.gui:
+  hrainac.gui:
     description: Gives access to the GUI.
     default: op
