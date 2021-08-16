@@ -1,11 +1,12 @@
 name: HrainMoveAddition
 main: me.nuymakstone.HrainMoveAddition.HrainMoveAddition
-version: BETA 2105 (DEV)
+version: 1.1
 author: NuymakStone
 description: An anticheat system
 website: https://github.com/HrainACAnticheat/HrainMoveAddition
 softdepend:
   - packetevents
+  - NoCheatPlus
 commands:
     HrainAC:
         description: Basic information about HrainMoveAddition Anticheat

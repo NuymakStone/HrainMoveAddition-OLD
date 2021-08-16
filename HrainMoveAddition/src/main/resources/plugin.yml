@@ -5,6 +5,7 @@ author: NuymakStone
 description: An anticheat system
 softdepend:
   - packetevents
+  - NoCheatPlus
 commands:
   HrainMoveAddition:
         description: Basic information about HrainMoveAddition Anticheat
