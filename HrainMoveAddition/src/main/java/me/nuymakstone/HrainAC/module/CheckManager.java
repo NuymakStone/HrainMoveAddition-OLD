@@ -25,6 +25,7 @@ import me.nuymakstone.HrainAC.check.interaction.entity.EntityInteractDirection;
 import me.nuymakstone.HrainAC.check.interaction.entity.EntityInteractReach;
 import me.nuymakstone.HrainAC.check.interaction.inventory.InventoryActions;
 import me.nuymakstone.HrainAC.check.movement.FabricatedMove;
+import me.nuymakstone.HrainAC.check.movement.SprintDirection;
 import me.nuymakstone.HrainAC.check.movement.look.AimbotConvergence;
 import me.nuymakstone.HrainAC.check.movement.look.AimbotHeuristic;
 import me.nuymakstone.HrainAC.check.movement.look.AimbotPrecision;
@@ -97,6 +98,7 @@ public class CheckManager {
         //new FabricatedBlockInteract();
         //new InventoryMove();
         new InventoryActions();
+        new SprintDirection();
     }
 
     public void unloadChecks() {
