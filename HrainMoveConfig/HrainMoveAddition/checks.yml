@@ -1,0 +1,67 @@
+tickrate:
+  enabled: true
+  cancelThreshold: 10
+  flagThreshold: 50
+  vlPassMultiplier: 0.995
+  flagCooldown: 10000
+  punishCommands: []
+  clockDriftThresholdMillis: 50
+  maxCatchupTimeMillis: 2000
+  debug: false
+  minRateMultiplier: 0.999
+  maxRateMultiplier: 1.005
+  rubberband: true
+  ignoreTicksAfterLongTeleport: 150
+phase:
+  enabled: true
+  cancelThreshold: 15
+  flagThreshold: 10
+  vlPassMultiplier: 0.995
+  flagCooldown: 5000
+  punishCommands: []
+fabricatedmove:
+  enabled: true
+  cancelThreshold: 2
+  flagThreshold: 8
+  vlPassMultiplier: 0.999
+  flagCooldown: 5000
+  punishCommands:
+  - 12:2:ban %player% &8< &bHrainAC &7| &bFabricatedMove &8> 30d
+invalidpitch:
+  enabled: false
+  cancelThreshold: -1
+  flagThreshold: 5
+  vlPassMultiplier: 0.9
+  flagCooldown: 5000
+  punishCommands: []
+smallhop:
+  enabled: true
+  cancelThreshold: 8
+  flagThreshold: 5
+  vlPassMultiplier: 0.99
+  flagCooldown: 5000
+  punishCommands:
+  - 13:2:ban %player% &8< &bHrainAC &7| &bHiveMC-HOP &8> 30d
+strafe:
+  enabled: true
+  cancelThreshold: 20
+  flagThreshold: 50
+  vlPassMultiplier: 0.99
+  flagCooldown: 5000
+  punishCommands:
+  - 50:2:ban %player% &8< &bHrainAC &7| &bInvalidMove &8> 30d
+  yawErrorThreshold: 0.5
+noclip:
+  enabled: true
+  cancelThreshold: 5
+  flagThreshold: 10
+  vlPassMultiplier: 0.995
+  flagCooldown: 5000
+  punishCommands: []
+inventoryactions:
+  enabled: false
+  cancelThreshold: 3
+  flagThreshold: 5
+  vlPassMultiplier: 0.999
+  flagCooldown: 5000
+  punishCommands: []
